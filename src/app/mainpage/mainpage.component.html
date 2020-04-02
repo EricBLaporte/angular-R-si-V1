@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
-
 <style>
 body,h1,h2,h3,h4,h5,h6 {	font-family: 'Arvo', Georgia, Times, serif;}
 body, html {
@@ -127,16 +126,15 @@ p {
      <h2 class="w3-center-align">ET SI LE GIEC AVAIT RAISON ?</h2>
      <p class = "w3-center-align"> Les experts alertent depuis des annés et pourtant cela ne semblent pas nous toucher outre mesure, mais au fond que change quelques degrés de plus a l'échelle de la france ? Et puis les energies renouvables vont nous sauver ! non ? Peut être faudrait-il commencer par lire les <a href = "https://www.ipcc.ch/srccl/chapter/summary-for-policymakers">conclusions du GIEC </a>  ?</p>   
      <p class = "w3-center-align">Les moins de 20 ans qui grandissent aujourd'hui pourront-ils profiter d'un pays aussi stable que nous le connaissons ? Il est probable que non, a nous de la faconner pour limiter les risques. </p> 
-
-
-    
-
-
+    <button pButton label="Contact" (click)="isOn = true" class="w3-btn w3-grey w3-center-align">En savoir plus</button>
     </div> 
    <div class = "w3-col s4 w3-container w3-center  ">
       <h1 class="w3-center-align w3-jumbo">4 ° C</h1>
    </div>
 </div>
+
+<app-sources-giec *ngIf="isOn"></app-sources-giec>
+
 
 <div class=" w3-display-container w3-row w3-light-grey">
   <div class = "w3-col s4 w3-container w3-display-container w3-center">
